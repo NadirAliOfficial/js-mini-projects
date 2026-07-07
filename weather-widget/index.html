@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Widget</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="search-row">
+      <input type="text" id="city-input" placeholder="Enter city..." />
+      <button id="search-btn">Search</button>
+    </div>
+    <div id="weather" class="hidden">
+      <div class="city-name" id="city-name"></div>
+      <div class="temp" id="temp"></div>
+      <div class="desc" id="desc"></div>
+      <div class="details">
+        <span id="humidity"></span>
+        <span id="wind"></span>
+      </div>
+    </div>
+    <div id="error" class="error hidden">City not found.</div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
